@@ -1,9 +1,0 @@
-D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Debug\netstandard2.0\MySyncroAPI.Domain.csprojAssemblyReference.cache
-D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Debug\netstandard2.0\MySyncroAPI.Domain.AssemblyInfoInputs.cache
-D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Debug\netstandard2.0\MySyncroAPI.Domain.AssemblyInfo.cs
-D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Debug\netstandard2.0\MySyncroAPI.Domain.csproj.CoreCompileInputs.cache
-D:\Sources\MySyncroProject\MySyncroAPI.Domain\bin\Debug\netstandard2.0\MySyncroAPI.Domain.deps.json
-D:\Sources\MySyncroProject\MySyncroAPI.Domain\bin\Debug\netstandard2.0\MySyncroAPI.Domain.dll
-D:\Sources\MySyncroProject\MySyncroAPI.Domain\bin\Debug\netstandard2.0\MySyncroAPI.Domain.pdb
-D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Debug\netstandard2.0\MySyncroAPI.Domain.dll
-D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Debug\netstandard2.0\MySyncroAPI.Domain.pdb
