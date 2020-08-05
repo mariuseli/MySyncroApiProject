@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iFjd1PSUrzHutZU1E3K6JHwgni6MSfD7vNl5BQ4CPXJunG5oacCEWe21W/4DOd2eMxREEtcTd5AMI4c5NTMXEQ==",
+  "dgSpecHash": "HQZU5ESUz+lEyUlsZLkTT9RD10SsZVAXa9SXr1r2rCblKXKDMpcagw9LvYaONchnqGtLeKlKNHMO8Qm0/cXzuw==",
   "success": true,
   "projectFilePath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Business\\MySyncroAPI.Business.csproj",
   "expectedPackageFiles": [
@@ -37,8 +37,7 @@
     "C:\\Users\\mariu\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\mariu\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\mariu\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\mariu\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\mariu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+    "C:\\Users\\mariu\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []
 }

@@ -72,3 +72,11 @@ D:\Sources\MySyncroProject\MySyncroAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNe
 D:\Sources\MySyncroProject\MySyncroAPI\obj\Debug\netcoreapp3.1\MySyncroAPI.csproj.CoreCompileInputs.cache
 D:\Sources\MySyncroProject\MySyncroAPI\obj\Debug\netcoreapp3.1\MySyncroAPI.MvcApplicationPartsAssemblyInfo.cs
 D:\Sources\MySyncroProject\MySyncroAPI\obj\Debug\netcoreapp3.1\MySyncroAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Sources\MySyncroProject\MySyncroAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Sources\MySyncroProject\MySyncroAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Sources\MySyncroProject\MySyncroAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Sources\MySyncroProject\MySyncroAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Sources\MySyncroProject\MySyncroAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Sources\MySyncroProject\MySyncroAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Sources\MySyncroProject\MySyncroAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Sources\MySyncroProject\MySyncroAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

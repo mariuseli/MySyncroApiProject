@@ -7,6 +7,7 @@ using System.Linq;
 using Microsoft.Extensions.Logging;
 using MySyncroAPI.Business.Queries;
 using MySyncroAPI.Business.MyContacts.Commands;
+using Microsoft.AspNetCore.Mvc.Diagnostics;
 
 namespace MySyncroAPI.Controllers
 {
@@ -57,6 +58,5 @@ namespace MySyncroAPI.Controllers
             }
 
         }
-
     }
 }

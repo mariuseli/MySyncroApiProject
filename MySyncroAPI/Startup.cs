@@ -21,8 +21,30 @@ namespace MySyncroAPI
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("*");
+                                  });
+            });
+
+            services.AddAuthorization(o=>{
+                o.AddPolicy("default", policy => {
+                    policy.RequireClaim("http://schemas.microsoft.com/identity/claims/scope", "user_impersonation");
+                });
+            });
+
+            //services.AddAuthentication(o=>{
+            //    o.DefaultScheme = JwtBearerDefaults.
+            //});
+
+
+
             //Add DB Context
             services.AddDbContext<MySyncroAPIDatabaseContext>(options =>{
                 options.UseSqlite(@"Data Source = Data\MySyncroDatabase.db");
@@ -42,6 +64,7 @@ namespace MySyncroAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
             }
 
             app.UseHttpsRedirection();
@@ -57,6 +80,8 @@ namespace MySyncroAPI
             });
 
             app.UseRouting();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 
