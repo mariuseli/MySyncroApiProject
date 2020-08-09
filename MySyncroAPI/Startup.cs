@@ -29,7 +29,7 @@ namespace MySyncroAPI
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   builder =>
                                   {
-                                      builder.WithOrigins("*");
+                                      builder.WithOrigins("*", "http://localhost:4200","http://127.0.0.1");
                                   });
             });
 

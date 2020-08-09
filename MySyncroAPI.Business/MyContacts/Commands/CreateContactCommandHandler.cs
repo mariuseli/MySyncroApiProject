@@ -27,6 +27,7 @@ namespace MySyncroAPI.Business.MyContacts.Commands
                 RefId = request.ContactToCreate.RefId
             };
             _dbContext.MyContacts.AddAsync(newContact, cancellationToken);
+            _dbContext.SaveChangesAsync(cancellationToken);
             return _dbContext.SaveChangesAsync(cancellationToken);
         }
     }
