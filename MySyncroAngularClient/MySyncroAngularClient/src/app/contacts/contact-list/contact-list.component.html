@@ -1,0 +1,28 @@
+<div class="container" *ngIf="contactList">
+  <p>Contacts list count : {{ contactCount }}</p>
+
+  <input
+    type="text"
+    placeholder="Search"
+    class="form-control col-md-4 ml-auto"
+    [(ngModel)]="searchContactFilter"
+  />
+  <br />
+
+  <div class="row">
+    <div
+      class="card"
+      style="width: 18rem; margin: 2px;"
+      *ngFor="let item of contactList | filterContacts: searchContactFilter"
+    >
+      <div class="card-body">
+        <h5 class="card-title">{{ item.ContactName }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          {{ item.ContactPhoneNumber }}
+        </h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{ item.ContactEmail }}</h6>
+        <p class="card-text">{{ item.ContactDescription }}</p>
+      </div>
+    </div>
+  </div>
+</div>

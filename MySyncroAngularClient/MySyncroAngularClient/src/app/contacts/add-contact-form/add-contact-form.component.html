@@ -1,0 +1,36 @@
+<p>Créer un Contact</p>
+
+<form [formGroup]="myAddContactForm" class="justify-content-md-center">
+
+    <div class="form-group">
+      <label for="contactname">Nom du Contact</label>
+      <input type="text" class="form-control" formControlName="contactname" placeholder="Nom du contact">
+      <div class="invalid-feedback" *ngIf="f.contactname.errors">
+        <div *ngIf="f.contactname.errors.required">Veuillez saisir un nom.</div>
+      </div>
+    </div>
+
+
+  <div class="row">
+    <div class="col form-group">
+      <label for="adressemail">Adresse Email</label>
+      <input type="email" class="form-control" formControlName="adressemail" placeholder="E-Mail">
+      <div class="invalid-feedback" *ngIf="!f.adressemail.valid">Veuillez saisir une adresse email valide.</div>
+    </div>
+
+    <div class="col form-group">
+      <label for="telephone">Numéro de téléphone</label>
+      <input type="text" class="form-control" formControlName="telephone" placeholder="Téléphone">
+      <div class="invalid-feedback" *ngIf="!f.telephone.valid">Veuillez saisir un numéro de téléphone valide.</div>
+    </div>
+
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea type="textarea" class="form-control" formControlName="description" placeholder="Description"> </textarea>
+    <div class="invalid-feedback" *ngIf="!f.description.valid">Petit texte descriptif à saisir.</div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="!myAddContactForm.valid" (click)="submitForm()">Submit</button>
+</form>
