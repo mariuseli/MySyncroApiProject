@@ -8,11 +8,15 @@ using Microsoft.Extensions.Hosting;
 using MySyncroAPI.Persistence;
 using MediatR;
 using MySyncroAPI.Business.Queries;
+using MediatR.Pipeline;
+using MySyncroAPI.Business.Infrastructure;
+using System;
 
 namespace MySyncroAPI
 {
     public class Startup
     {
+        private bool _isDev = false;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -46,12 +50,26 @@ namespace MySyncroAPI
 
 
             //Add DB Context
-            services.AddDbContext<MySyncroAPIDatabaseContext>(options =>{
-                options.UseSqlite(@"Data Source = Data\MySyncroDatabase.db");
-            });
+            if (this.Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT").StartsWith("Development"))
+            {
+                services.AddDbContext<MySyncroAPIDatabaseContext>(options =>
+                {
+                    options.UseSqlite(@"Data Source = Data\MySyncroDatabase.db");
+                });
+            }
+            else
+            {
+                services.AddDbContext<MySyncroAPIDatabaseContext>(options =>
+                {
+                    options.UseSqlite(@"Data Source = /home/site/wwwroot/Data/MySyncroDatabase.db");
+                });
+            }
 
             //Inject MediatR queries
             services.AddMediatR(typeof(GetAllContactsQuery).GetTypeInfo().Assembly);
+            services.AddSingleton(typeof(IPipelineBehavior<,>), typeof(RequestPreProcessorBehavior<,>));
+            services.AddSingleton(typeof(IRequestPreProcessor<>), typeof(RequestLogger<>));
+
             services.AddControllers();
            
             // Register the Swagger generator, defining 1 or more Swagger documents
@@ -63,8 +81,8 @@ namespace MySyncroAPI
         {
             if (env.IsDevelopment())
             {
+                _isDev = true;
                 app.UseDeveloperExceptionPage();
-
             }
 
             app.UseHttpsRedirection();

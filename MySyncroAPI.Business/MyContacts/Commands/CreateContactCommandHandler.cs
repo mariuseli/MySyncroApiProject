@@ -10,7 +10,7 @@ namespace MySyncroAPI.Business.MyContacts.Commands
 {
     public class CreateContactCommandHandler : IRequestHandler<CreateContactCommand, int>
     {
-        private MySyncroAPIDatabaseContext _dbContext = null;
+        private readonly MySyncroAPIDatabaseContext _dbContext = null;
         public CreateContactCommandHandler(MySyncroAPIDatabaseContext dbContext)
         {
             _dbContext = dbContext;

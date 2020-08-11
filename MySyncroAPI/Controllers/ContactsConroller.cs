@@ -15,30 +15,30 @@ namespace MySyncroAPI.Controllers
     [Route("[controller]/[action]")]
     public class ContactsController : ControllerBase
     {
-        private IMediator _mediator;
+        private readonly IMediator _mediator;
+        private readonly ILogger<WeatherForecastController> _logger;
         public ContactsController(IMediator mediator,ILogger<WeatherForecastController> logger)
         {
+            _logger = logger;
             _mediator = mediator;
         }
 
-        //[HttpPost("RegisterContact")]
-        //public async Task<IActionResult> RegisterContact(string contactToAdd)
-        //{
-        //    var fromTxt = ContactModel.FromText(contactToAdd);
-        //    var dto = fromTxt.ToDto();
-        //    await _mediator.Send(new CreateContactCommand { ContactToCreate = dto });
-        //    return Ok();
-        //}
-
-        [HttpPost("RegisterContact")]
+        [HttpPost]
         public async Task<IActionResult> RegisterContact(ContactModel? contactToAdd)
         {
-            var dto = contactToAdd.ToDto();
-            await _mediator.Send(new CreateContactCommand { ContactToCreate = dto });
-            return Ok();
+            try
+            {
+                var dto = contactToAdd.ToDto();
+                await _mediator.Send(new CreateContactCommand { ContactToCreate = dto });
+            }catch(Exception registerException)
+            {
+                _logger.Log(LogLevel.Error, registerException, registerException.Message);
+                _logger.LogInformation(System.IO.File.Exists("./Data/MySyncroDatabase.db") ? "File Exists" : "File is not acessible");
+            }
+            return await GetAllContacts();
         }
 
-        [HttpGet(nameof(GetAllContacts))]
+        [HttpGet]
         public async Task<IActionResult> GetAllContacts()
         {
             try
@@ -49,12 +49,13 @@ namespace MySyncroAPI.Controllers
                     var results =  dto.Select(e=> ContactModel.FromDTO(e));
                     return new JsonResult(results);
                 }else{
-                    return NotFound();
+                    return new JsonResult(new { ContentMessage = "No data found from DB" });
                 }
             }
             catch(Exception exception)
             {
-                return StatusCode(500);
+                _logger.LogError(exception.Message, nameof(GetAllContacts));
+                return StatusCode(500, $"{exception.Message} : {exception.StackTrace}");
             }
 
         }

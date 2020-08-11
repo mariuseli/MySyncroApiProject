@@ -36,7 +36,7 @@ namespace MySyncroAPI.Models
             {
                 Id = contactDto.Id,
                 RefId = contactDto.RefId.ToString(),
-                CreationDate = contactDto.CreationDate.ToString("YYYY-MM-dd HH:mm:ss"),
+                CreationDate = contactDto.CreationDate.ToString("yyyy-MM-dd HH:mm:ss"),
                 ContactDescription = contactDto.ContactDescription,
                 ContactEmail = contactDto.ContactEmail,
                 ContactName = contactDto.ContactName,
@@ -46,17 +46,18 @@ namespace MySyncroAPI.Models
 
         public ContactDto ToDto()
         {
-            return new ContactDto
+            var newElementt =  new ContactDto
             {
                 Id = this.Id,
-                RefId = new Guid (this.RefId),
-                CreationDate = DateTime.Parse( this.CreationDate),
-                //CreationDate = DateTime.Parse( this.CreationDate, "YYYY-MM-dd HH:mm:ss"),
+                RefId = new Guid(this.RefId),
+                CreationDate = DateTime.Parse(this.CreationDate),
                 ContactDescription = this.ContactDescription,
                 ContactEmail = this.ContactEmail,
                 ContactName = this.ContactName,
                 ContactPhoneNumber = this.ContactPhoneNumber
             };
+
+            return newElementt;
         }
     }
 }

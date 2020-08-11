@@ -10,7 +10,7 @@ namespace MySyncroAPI.Business.Queries
 {
     public class GetAllContactsQueryHandler : IRequestHandler<GetAllContactsQuery, List<ContactDto>>
     {
-        private MySyncroAPIDatabaseContext _dbContext = null;
+        private readonly MySyncroAPIDatabaseContext _dbContext = null;
         public GetAllContactsQueryHandler(MySyncroAPIDatabaseContext dbContext)
         {
             _dbContext = dbContext;

@@ -10,11 +10,17 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.6" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MySyncroAPI.Domain\MySyncroAPI.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MySyncroDataBase.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
