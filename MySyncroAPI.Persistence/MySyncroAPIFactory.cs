@@ -8,8 +8,8 @@ namespace MySyncroAPI.Persistence{
         public MySyncroAPIDatabaseContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<MySyncroAPIDatabaseContext>();
-            //string connectionString = @"../MySyncroAPI/Data/MySyncroDatabase.db";
-            //optionsBuilder.UseSqlite("Filename=" + connectionString);
+            string connectionString = @"../MySyncroAPI/Data/MySyncroDatabase.db";
+            optionsBuilder.UseSqlite("Filename=" + connectionString);
 
             return new MySyncroAPIDatabaseContext(optionsBuilder.Options);
         }

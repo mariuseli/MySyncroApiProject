@@ -8,5 +8,7 @@ namespace MySyncroAPI.Domain
         public string ContactEmail{get;set;}
         public string ContactPhoneNumber {get;set;}
         public string ContactDescription {get;set;}
+        public int? MySyncSessionId { get; set; }
+        public MySyncSession MySyncSession { get; set; }
     }
 }

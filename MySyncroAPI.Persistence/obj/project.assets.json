@@ -1174,11 +1174,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj",
+      "projectUniqueName": "D:\\sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj",
       "projectName": "MySyncroAPI.Persistence",
-      "projectPath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj",
+      "projectPath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj",
       "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-      "outputPath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Persistence\\obj\\",
+      "outputPath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -1199,8 +1199,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj": {
-              "projectPath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj"
+            "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj": {
+              "projectPath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj"
             }
           }
         }

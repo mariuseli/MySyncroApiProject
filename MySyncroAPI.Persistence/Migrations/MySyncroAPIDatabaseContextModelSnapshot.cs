@@ -37,12 +37,47 @@ namespace MySyncroAPI.Persistence.Migrations
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("MySyncSessionId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<Guid>("RefId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("MySyncSessionId");
+
                     b.ToTable("MyContacts");
+                });
+
+            modelBuilder.Entity("MySyncroAPI.Domain.MySyncSession", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("RefId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("SessionItemsCount")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("SessionName")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SyncSessions");
+                });
+
+            modelBuilder.Entity("MySyncroAPI.Domain.MyContact", b =>
+                {
+                    b.HasOne("MySyncroAPI.Domain.MySyncSession", "MySyncSession")
+                        .WithMany("SyncedContactList")
+                        .HasForeignKey("MySyncSessionId");
                 });
 #pragma warning restore 612, 618
         }

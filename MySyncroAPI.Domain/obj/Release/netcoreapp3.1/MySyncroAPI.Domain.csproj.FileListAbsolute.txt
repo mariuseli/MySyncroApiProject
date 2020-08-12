@@ -1,0 +1,12 @@
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\bin\Release\netcoreapp3.1\MySyncroAPI.Domain.deps.json
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\bin\Release\netcoreapp3.1\MySyncroAPI.Domain.runtimeconfig.json
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\bin\Release\netcoreapp3.1\MySyncroAPI.Domain.runtimeconfig.dev.json
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\bin\Release\netcoreapp3.1\MySyncroAPI.Domain.dll
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\bin\Release\netcoreapp3.1\MySyncroAPI.Domain.pdb
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Release\netcoreapp3.1\MySyncroAPI.Domain.csprojAssemblyReference.cache
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Release\netcoreapp3.1\MySyncroAPI.Domain.AssemblyInfoInputs.cache
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Release\netcoreapp3.1\MySyncroAPI.Domain.AssemblyInfo.cs
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Release\netcoreapp3.1\MySyncroAPI.Domain.csproj.CoreCompileInputs.cache
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Release\netcoreapp3.1\MySyncroAPI.Domain.dll
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Release\netcoreapp3.1\MySyncroAPI.Domain.pdb
+D:\Sources\MySyncroProject\MySyncroAPI.Domain\obj\Release\netcoreapp3.1\MySyncroAPI.Domain.genruntimeconfig.cache

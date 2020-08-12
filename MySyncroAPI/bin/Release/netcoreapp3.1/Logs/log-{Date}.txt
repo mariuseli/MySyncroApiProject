@@ -1,0 +1,22 @@
+08/11/2020 11:43:58 +02:00 Application Starting.
+08/11/2020 11:44:07 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 11:44:07 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 11:44:07 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 11:44:07 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 11:59:44 +02:00 Application Starting.
+08/11/2020 12:08:52 +02:00 Application Starting.
+08/11/2020 12:11:02 +02:00 Application Starting.
+08/11/2020 12:17:57 +02:00 Application Starting.
+08/11/2020 12:21:36 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 12:21:36 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 12:21:36 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 12:21:36 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 16:06:28 +02:00 Application Starting.
+08/11/2020 16:10:43 +02:00 MySyncroAPI.Business.MyContacts.Commands.CreateContactCommand
+08/11/2020 16:10:43 +02:00 MySyncroAPI.Business.MyContacts.Commands.CreateContactCommand
+08/11/2020 16:10:44 +02:00 MySyncroAPI.Business.MyContacts.Commands.CreateContactCommand
+08/11/2020 16:10:44 +02:00 MySyncroAPI.Business.MyContacts.Commands.CreateContactCommand
+08/11/2020 16:11:24 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 16:11:24 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 16:11:24 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery
+08/11/2020 16:11:24 +02:00 MySyncroAPI.Business.Queries.GetAllContactsQuery

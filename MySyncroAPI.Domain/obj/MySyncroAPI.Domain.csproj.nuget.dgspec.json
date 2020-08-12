@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj": {}
+    "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj": {
+    "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj",
+        "projectUniqueName": "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj",
         "projectName": "MySyncroAPI.Domain",
-        "projectPath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj",
+        "projectPath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj",
         "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-        "outputPath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\obj\\",
+        "outputPath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

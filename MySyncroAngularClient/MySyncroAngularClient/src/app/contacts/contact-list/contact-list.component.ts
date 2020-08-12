@@ -19,6 +19,7 @@ export class ContactListComponent implements OnInit {
       x => {
         console.log(x);
         this.contactList = ContactModel.deserializeFromJsonArray(x);
+        this.contactCount = this.contactList.length;
       }
     );
   }
