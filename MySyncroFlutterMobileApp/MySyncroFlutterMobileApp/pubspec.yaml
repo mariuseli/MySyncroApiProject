@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   uuid: 2.2.0
+  http: 0.12.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -75,3 +76,16 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: YanoneKaffeesatz
+      fonts:
+        - asset: lib/Fonts/YanoneKaffeesatz-Regular.ttf
+        - asset: lib/Fonts/YanoneKaffeesatz-ExtraLight.ttf
+          weight: 100
+        - asset: lib/Fonts/YanoneKaffeesatz-Medium.ttf
+          weight: 500
+        - asset: lib/Fonts/YanoneKaffeesatz-Bold.ttf
+          weight: 900
+    - family: UbuntuCondensed
+      fonts:
+        - asset: lib/Fonts/UbuntuCondensed-Regular.ttf
