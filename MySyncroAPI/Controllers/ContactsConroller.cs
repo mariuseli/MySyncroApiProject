@@ -16,8 +16,8 @@ namespace MySyncroAPI.Controllers
     public class ContactsController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly ILogger<WeatherForecastController> _logger;
-        public ContactsController(IMediator mediator,ILogger<WeatherForecastController> logger)
+        private readonly ILogger<ContactsController> _logger;
+        public ContactsController(IMediator mediator,ILogger<ContactsController> logger)
         {
             _logger = logger;
             _mediator = mediator;

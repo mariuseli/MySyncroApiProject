@@ -4,8 +4,6 @@ import 'package:MySyncroFlutterMobileApp/Models/SyncSessionModel.dart';
 import 'package:http/http.dart' as http;
 
 class ContactService{
-  var client = http.Client();
-
   static Future<List<ContactModel>> getContactList() async {
     var client = http.Client();
     List<ContactModel> listOfContacts = new List<ContactModel>();
@@ -43,7 +41,24 @@ class ContactService{
       client.close();
     }
 
+print('Return of service is : ');
+print(syncSessions);
     return syncSessions;
   }
  
+ static Future<SyncSessionModel> getContactListBySessionId(int syncSessionId) async {
+   var client = http.Client();
+   SyncSessionModel syncSessionModel = new SyncSessionModel();
+    try {
+      var response = await client.get('https://mysyncroapi20200809112720.azurewebsites.net/SyncSession/GetSyncSessionById?id=$syncSessionId');
+      if(response.statusCode == 200){
+        var returnObject = jsonDecode(response.body);
+        syncSessionModel = SyncSessionModel.fromJson(returnObject);        
+      }
+    } finally {
+      client.close();
+    }
+
+    return syncSessionModel;
+ }
 }

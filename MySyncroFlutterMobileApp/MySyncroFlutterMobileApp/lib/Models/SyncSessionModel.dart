@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:MySyncroFlutterMobileApp/Models/ContactModel.dart';
 import 'package:MySyncroFlutterMobileApp/Models/ModelBase.dart';
 
@@ -8,8 +6,6 @@ class SyncSessionModel extends ModelBase{
   int sessionItemsCount;
   List<ContactModel> syncedContactList;
 
-
-  
   SyncSessionModel({
     this.sessionName,
     this.sessionItemsCount,
@@ -18,25 +14,26 @@ class SyncSessionModel extends ModelBase{
   factory SyncSessionModel.fromJson(Map<String, dynamic> json) {
 
     List<ContactModel> valHala = new List<ContactModel>();
-    if(json['syncedContactList'] != null)
+    if(json['syncedContactList'] is List && json['syncedContactList'] != null)
     {
-      var tableOfSomething = jsonDecode(json['syncedContactList']);
+      var tableOfSomething =  json['syncedContactList'] ;
       for(var i = 0; i < tableOfSomething.length; i++)
       {
         valHala.add(ContactModel.fromJson(tableOfSomething[i]));
       }
     }
 
-    var x= SyncSessionModel(
-      sessionName: json['sessionName'],
-      sessionItemsCount: int.parse(json['sessionItemsCount']),
+    var x = new SyncSessionModel(
+      sessionName: json['sessionName'] as String,
+      sessionItemsCount:  json['sessionItemsCount'],
       syncedContactList: valHala
     );
     
-    x.id = json['id'];
-    x.refId = json['refId'];
-    x.creationDate = DateTime.parse(json['creationDate']);
+    x.id = json['id'] as int;
+    x.refId = json['refId'] as String;
+    x.creationDate = DateTime.tryParse(json['creationDate']);
 
     return x;
   }
+
 }

@@ -3,15 +3,13 @@ using MySyncroAPI.Domain;
 
 namespace MySyncroAPI.Business
 {
-    public class ContactDto
+    public class ContactDto : DtoBase
     {
-        public int Id {get;set;}
-        public Guid RefId {get;set;}
-        public DateTime CreationDate {get;set;}
         public string ContactName {get;set;}
         public string ContactEmail{get;set;}
         public string ContactPhoneNumber {get;set;}
         public string ContactDescription {get;set;}
+        public int? MySyncSessionId { get; set; }
 
         public static ContactDto Projection(MyContact source)
         {
@@ -22,7 +20,8 @@ namespace MySyncroAPI.Business
                 ContactName = source.ContactName,
                 ContactEmail = source.ContactEmail,
                 ContactPhoneNumber = source.ContactPhoneNumber,
-                ContactDescription = source.ContactDescription
+                ContactDescription = source.ContactDescription,
+                MySyncSessionId = source.MySyncSessionId
             };
         }
     }

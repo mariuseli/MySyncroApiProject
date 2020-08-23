@@ -23,8 +23,7 @@ class ContactModel extends ModelBase{
     
     x.id = json['id'];
     x.refId = json['refId'];
-    x.creationDate = DateTime.parse(json['creationDate']);
-
+    x.creationDate = DateTime.tryParse(json['creationDate']);
     return x;
   }
 }

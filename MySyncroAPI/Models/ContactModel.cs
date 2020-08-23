@@ -13,6 +13,7 @@ namespace MySyncroAPI.Models
         public string ContactEmail{get;set;}
         public string ContactPhoneNumber {get;set;}
         public string ContactDescription {get;set;}
+        public int MySyncSessionId { get; set; }
 
         public static ContactModel FromText(string jsonString)
         {
@@ -40,7 +41,8 @@ namespace MySyncroAPI.Models
                 ContactDescription = contactDto.ContactDescription,
                 ContactEmail = contactDto.ContactEmail,
                 ContactName = contactDto.ContactName,
-                ContactPhoneNumber = contactDto.ContactPhoneNumber
+                ContactPhoneNumber = contactDto.ContactPhoneNumber,
+                MySyncSessionId = contactDto.MySyncSessionId.HasValue ? contactDto.MySyncSessionId.Value : 0
             };
         }
 
@@ -54,7 +56,8 @@ namespace MySyncroAPI.Models
                 ContactDescription = this.ContactDescription,
                 ContactEmail = this.ContactEmail,
                 ContactName = this.ContactName,
-                ContactPhoneNumber = this.ContactPhoneNumber
+                ContactPhoneNumber = this.ContactPhoneNumber,
+                MySyncSessionId = this.MySyncSessionId
             };
 
             return newElementt;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o3szqq8NTJ2Nk/jngbwC8vPONv4YMfjHKI+Cuir6qBWKCtZhwZynNaEx/ce8fwh0FQO/jBQVHD7fbj6RZzDsUw==",
+  "dgSpecHash": "dmhBT9XFaBD8m3V7UrQilu9zJlos46M+sokNz1Znklp/5Ksz8mWqE++nIC3FG9LnvrHnKu7D0Ia7to/SvXsz8w==",
   "success": true,
-  "projectFilePath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj",
+  "projectFilePath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mariu\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\mariu\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

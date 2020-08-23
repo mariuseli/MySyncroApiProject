@@ -91,3 +91,4 @@ D:\Sources\MySyncroProject\MySyncroAPI\obj\Release\netcoreapp3.1\MySyncroAPI.Mvc
 D:\Sources\MySyncroProject\MySyncroAPI\obj\Release\netcoreapp3.1\MySyncroAPI.MvcApplicationPartsAssemblyInfo.cache
 D:\Sources\MySyncroProject\MySyncroAPI\bin\Release\netcoreapp3.1\Logs\log-{Date}.txt
 D:\Sources\MySyncroProject\MySyncroAPI\bin\Release\netcoreapp3.1\Data\MySyncroDatabase.db
+D:\Sources\MySyncroProject\MySyncroAPI\bin\Release\netcoreapp3.1\Properties\ServiceDependencies\MySyncroAPI20200809112720 - Web Deploy1\profile.arm.json

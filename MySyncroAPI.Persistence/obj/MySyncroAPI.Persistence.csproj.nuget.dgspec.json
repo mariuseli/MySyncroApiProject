@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj": {}
+    "D:\\Sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj": {}
   },
   "projects": {
-    "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj": {
+    "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj",
+        "projectUniqueName": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj",
         "projectName": "MySyncroAPI.Domain",
-        "projectPath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj",
+        "projectPath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj",
         "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-        "outputPath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\obj\\",
+        "outputPath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -65,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj": {
+    "D:\\Sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj",
+        "projectUniqueName": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj",
         "projectName": "MySyncroAPI.Persistence",
-        "projectPath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj",
+        "projectPath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Persistence\\MySyncroAPI.Persistence.csproj",
         "packagesPath": "C:\\Users\\mariu\\.nuget\\packages\\",
-        "outputPath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Persistence\\obj\\",
+        "outputPath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -97,8 +97,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj": {
-                "projectPath": "D:\\sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj"
+              "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj": {
+                "projectPath": "D:\\Sources\\MySyncroProject\\MySyncroAPI.Domain\\MySyncroAPI.Domain.csproj"
               }
             }
           }
@@ -142,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
